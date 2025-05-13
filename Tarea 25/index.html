@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estadísticas del Equipo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Estadísticas del Equipo</h1>
+
+    <section>
+      <h2>🏀 Jugadores</h2>
+      <ul id="playersList"></ul>
+      <h3>Agregar Jugador</h3>
+      <input type="text" id="firstName" placeholder="Nombre">
+      <input type="text" id="lastName" placeholder="Apellido">
+      <input type="number" id="age" placeholder="Edad">
+      <button onclick="addPlayer()">Agregar Jugador</button>
+    </section>
+
+    <section>
+      <h2>⚽ Juegos</h2>
+      <ul id="gamesList"></ul>
+      <h3>Agregar Juego</h3>
+      <input type="text" id="opponent" placeholder="Oponente">
+      <input type="number" id="teamPoints" placeholder="Puntos del equipo">
+      <input type="number" id="opponentPoints" placeholder="Puntos del oponente">
+      <button onclick="addGame()">Agregar Juego</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
